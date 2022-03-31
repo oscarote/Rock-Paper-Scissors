@@ -1,4 +1,15 @@
 function computerPlay() {
-    return Math.floor(Math.random()*3);
+    let randomPlay = Math.floor(Math.random()*3);
+    switch (randomPlay) {
+        case 0:
+            return "Rock";
+            break;
+        case 1:
+            return "Paper";
+            break;
+        case 2:
+            return "Scissors";
+            break;
+    }
 }
 
