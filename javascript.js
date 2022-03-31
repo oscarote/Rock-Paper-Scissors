@@ -14,7 +14,6 @@ function computerPlay() {
 }
 
 function playRound(playerSelection, computerSelection) {
-    playerSelection = playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1).toLowerCase();
     if (playerSelection === "Rock" && computerSelection === "Paper") {
         ++computerScore;
         return "You Lose! Paper beats Rock";
@@ -41,11 +40,21 @@ function playRound(playerSelection, computerSelection) {
 function game() {
     for (let i = 0; i < 5; i++) {
         let playerSelection = prompt("Please, make your choice:");
+        playerSelection = playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1).toLowerCase();
+        if (!(playerSelection === "Rock" || playerSelection === "Paper" || playerSelection === "Scissors")) {
+            playerSelection = prompt("You have to choose between Rock, Paper or Scissors");
+            if (!(playerSelection === "Rock" || playerSelection === "Paper" || playerSelection === "Scissors")) {
+                console.log("You didn't choose a properly value so \"Rock\" was assigned to you");
+                playerSelection = "Rock";
+            }
+        }
+
         const computerSelection = computerPlay();
         console.log(playRound(playerSelection, computerSelection));
         console.log(`Your score is: ${playerScore}`);
         console.log(`Computer score is: ${computerScore}`);
     }
+
     if (playerScore > computerScore) {
         console.log("You won the game!");
     } else if (playerScore < computerScore) {
@@ -57,4 +66,3 @@ function game() {
 
 let playerScore = parseInt(0);
 let computerScore = parseInt(0);
-// console.log(playRound(playerSelection, computerSelection));
