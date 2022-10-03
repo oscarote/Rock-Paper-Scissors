@@ -5,9 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors game</title>
+    <link rel="stylesheet" href="style.css">
     <script src="javascript.js"></script>
 </head>
 <body>
-    <p>Hello! At the moment you have to play this game in your DevTools Console.</p>
+    <div class="header">
+        <div class="logo">Rock Paper Scissors!</div>
+    </div>
+
+    <div class="content">
+        <div class="subtitle">Are you brave enough to beat the machine?</div>
+        <div class="subtext">The first one to get 5 points wins, go ahead and make your move</div>
+        <div class="buttons">
+            <button class="btn btn-square" id="rockbtn"><div class="item">&#9994;</div></button>
+            <button class="btn btn-square" id="paperbtn"><div class="item">&#9995;</div></button>
+            <button class="btn btn-square" id="scissorsbtn"><div class="item">&#9996;</div></button>
+        </div>
+
+        <div class="game">
+            <div class="round">Are you a coward?</div>
+            <div class="columns">
+            <div class="player">
+                <div class="item">?</div>
+                <div class="scoreitem">Player: 0</div>
+            </div>
+            <div class="machine">
+                <div class="item">?</div>
+                <div class="scoreitem">Machine: 0</div>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        Copyright © Oscarote 2022
+    </div>
 </body>
 </html>
