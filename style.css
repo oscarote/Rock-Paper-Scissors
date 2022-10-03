@@ -133,6 +133,26 @@ button {
     padding-right: 12%;
 }
 
+.playagain {
+    text-align: center;
+}
+
+.playbutton {
+    color: white;
+    font-size: 32px;
+    padding: 5px;
+    margin: 20px;
+}
+
+.finalMessage {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1F2937;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 /* Footer */
 .footer {
     height: 80px;
