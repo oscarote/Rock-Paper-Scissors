@@ -5,3 +5,5 @@ This project is a game where you have to choose between rock, paper and scissors
 It has been made with javascript, CSS and HTML.
 ## Launch
 It can be played via website.
+
+[Live Demo](https://oscarote.github.io/rock-paper-scissors/) :point_left:
