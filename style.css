@@ -161,6 +161,21 @@ button {
     justify-content: center;
 }
 
+#gh-logo {
+    width: 35px;
+    height: 35px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-left: 5px;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 550px) {
